@@ -1,3 +1,6 @@
+import time
+
+
 def solution(grid):
     answer = []
     pos_dir_dic = {}
@@ -71,3 +74,17 @@ def new_direction(indication, direction):
         elif direction == 'R':
             direction = 'D'
     return direction
+
+
+test_case_list = [
+    ["SL", "LR"],
+    ["S"],
+    ["R", "R"],
+]
+
+start_time = time.time()
+
+for test_case in test_case_list:
+    print(solution(test_case))
+
+print(round((time.time() - start_time) * 1000, 6), 'ms')
