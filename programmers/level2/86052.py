@@ -75,6 +75,7 @@ def new_direction(indication, direction):
             direction = 'D'
     return direction
 
+    # 충돌시켜보면 어떨까
 
 test_case_list = [
     ["SL", "LR"],
